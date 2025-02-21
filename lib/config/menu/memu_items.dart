@@ -67,4 +67,10 @@ const appMenuItems = <MenuItem>[
     link: '/infinite',
     icon: Icons.list_alt_rounded
   ),
+   MenuItem(
+    title: 'Contador',
+    subTitle: 'Contador en Riverpod',
+    link: '/counter',
+    icon: Icons.lock_clock
+  ),
 ];
