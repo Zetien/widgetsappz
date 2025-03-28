@@ -8,4 +8,4 @@ final colorListProvider = Provider((ref) => colorList);
 final isDarkModeProvider = StateProvider((ref) => false);
 
 //un simple int
-final selectedIndexColorProvider = StateProvider((ref) => 0);
+final selectedColorProvider = StateProvider((ref) => 0);

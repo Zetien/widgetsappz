@@ -34,7 +34,7 @@ class _ThemeChangerView extends ConsumerWidget {
   @override
   Widget build(BuildContext context, ref) {
     final List<Color> colors = ref.watch(colorListProvider);
-    final int selectedColor = ref.watch(selectedIndexColorProvider);
+    final int selectedColor = ref.watch(selectedColorProvider);
     return ListView.builder(
       itemCount: colors.length,
       itemBuilder: (context, index) {
@@ -48,7 +48,7 @@ class _ThemeChangerView extends ConsumerWidget {
             value: index,
             groupValue: selectedColor,
             onChanged: (value) {
-              ref.read(selectedIndexColorProvider.notifier).state = index;
+              ref.read(selectedColorProvider.notifier).state = index;
             });
       },
     );
